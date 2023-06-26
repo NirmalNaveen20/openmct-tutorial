@@ -42,3 +42,6 @@ jobs:
          
       - name: Provision Droplet and deploy container
         run: doctl compute droplet create "$GIT_TAG_NAME" --image docker-18-04 --size s-1vcpu-1gb --region nyc1 --user-data-file deploy.sh --wait
+
+
+    
